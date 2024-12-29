@@ -1,0 +1,22 @@
+body {
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.submit-btn{
+    float: right;
+    margin-top: 10px;
+}

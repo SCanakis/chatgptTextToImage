@@ -2,13 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/nes.css/css/nes.min.css">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text to Image</title>
   </head>
   <body>
-    <h1>Hello mf</h1>
+    <section class="es-container with-title">
+      <h2 class="nes-text is-primary">Welcome</h2>
+      <imgsrc="https://via.placeholder.com/150" alt="Retro Placeholder" class="center-image">
 
+      <form action="form-container" id="da-form">
+        <div class="nes-field">
+          <label for="prompt">Enter Prompt:</label>
+          <input type="text" id="prompt" class="nes-input">
+        </div>
+      </form>
+
+      <button form="da-form" type="submit" class="nes-btn is-primary submit-btn">Generate!</button>
+    
+
+    </section>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
