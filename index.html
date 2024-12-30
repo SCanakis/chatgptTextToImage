@@ -6,21 +6,26 @@
     <link rel="stylesheet" href="https://unpkg.com/nes.css/css/nes.min.css">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Text to Image</title>
+    <title>SNES AI</title>
   </head>
   <body>
     <section class="es-container with-title">
       <h2 class="nes-text is-primary">Welcome</h2>
-      <imgsrc="https://via.placeholder.com/150" alt="Retro Placeholder" class="center-image">
+
+      <div class="nes-container" id="image-container">
+        <img src="assets/9cb159ed669f59d43cf2abc56c33f6a4.gif" alt="Retro Placeholder" class="center-image">
+      </div>
+    
 
       <form action="form-container" id="da-form">
         <div class="nes-field">
           <label for="prompt">Enter Prompt:</label>
-          <input type="text" id="prompt" class="nes-input">
+          <textarea name="prompt" maxlength="160" class="nes-textarea"></textarea>
         </div>
       </form>
-
-      <button form="da-form" type="submit" class="nes-btn is-primary submit-btn">Generate!</button>
+      <div id="button-container">
+        <button form="da-form" type="submit" class="nes-btn is-primary submit-btn">Generate!</button>
+      </div>
     
 
     </section>
