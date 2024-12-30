@@ -14,16 +14,17 @@ app.use(express.json());
 
 app.post('/dream', async (req,res) => {
     const prompt = req.body.prompt;
-
+    console.log("request recieved")
     const aiResponse = await openai.images.generate({
         model: "dall-e-2",
         prompt: prompt,
         n:1,
-        size: '1024x1024'
+        size: '512x512'
     });
 
     const image = aiResponse.data[0].url;
     res.send({image});
+    console.log("Response sent")
 });
 
 app.listen(8080, () => console.log("make art on http://localhost:8080/dream"));
